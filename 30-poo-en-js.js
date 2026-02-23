@@ -2,7 +2,7 @@
 //Una clase en js es una plantilla para crear objetos, que comparten mismas propiedades y metodos
 // una clase es como un molde que describe como seran los objetos y que podran hacer
 
-class product {
+class Product {
     constructor (productName = ``, productPrice){
         this.productName = productName;
         this.productPrice = productPrice;
@@ -15,17 +15,17 @@ class product {
 
 }
 
-const product1 = new product("Remote control", 15000)
-const product2 = new product("SSD", 250000)
+const product1 = new Product("Remote control", 15000)
+const product2 = new Product("SSD", 250000)
 
 console.log(product1.formatproduct());
 console.log(product2.formatproduct());
 
 
 //================================
-//Herencia en java script permite que lo objetos reutilicen las propiedades y metodos de otros 
+//Herencia en java script permite que lo objetos reutilicen las propiedades y metodos de otros
 
-class Book extends product {
+class Book extends Product {
     constructor( bookName, bookPrice, isbn){
         super(``, bookPrice);
         (bookName, bookName);
